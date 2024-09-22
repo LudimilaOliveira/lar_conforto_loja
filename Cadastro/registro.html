@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="shortcut icon" href="../Img/moveis.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="left-cadastro">
+            <h1>Seja bem-vindo</h1>
+            <img src="../Img/Lar & Conforto.png" class="left-cadastro-image">
+        </div>
+        <div class="right-cadastro">
+            <div class="card-cadastro">
+                <h1>Faça seu Cadastro </h1>
+                <div class="textfield">
+                    <label>Nome completo:</label>
+                    <input type="name" name="name" id="name" placeholder="Nome Completo" onchange="validateFields()" autocomplete="off">
+                </div>
+                <div class="textfield">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email do usuário" onchange="validateFields()" autocomplete="off">
+                </div>
+                <div class="textfield">
+                    <label>Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" onchange="validateFields()">
+                </div>
+                <div class="textfield">
+                    <label>Confirmar senha:</label>
+                    <input type="confirmpassword" name="confirm-password" id="confirmpassword" placeholder="Confirme sua senha" onchange="validateFields()">
+                </div>
+                <button class="button-cadastro" id="cadastro-button" disabled="true" onclick="registrar()">Cadastrar</button>
+                <p>Já tem uma conta?<a href="../Login/login.html" onclick="login()">Acessar</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
